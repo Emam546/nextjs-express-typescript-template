@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,13 +12,12 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "CommonJS",
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./",
-    "outDir": "dist",
     "paths": {
       "@src/*": [
         "./src/*"
@@ -26,14 +25,12 @@
       "@serv/*": [
         "./server/src/*"
       ]
-    },
-    "moduleResolution": "node"
+    }
   },
   "include": [
     "next-env.d.ts",
-    "build.ts",
-    "src/**/*.ts",
-    "server/src/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"

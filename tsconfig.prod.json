@@ -7,9 +7,7 @@
     "removeComments": true,
     "module": "CommonJS",
     "paths": {
-      "@serv/*": [
-        "./server/src/*"
-      ]
+      
     },
     "useUnknownInCatchVariables": false,
     "skipLibCheck": true,
