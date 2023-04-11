@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "removeComments": true,
+    "module": "CommonJS",
+    "paths": {
+      "@serv/*": [
+        "./server/src/*"
+      ]
+    },
+    "useUnknownInCatchVariables": false,
+    "skipLibCheck": true,
+    "baseUrl": "./"
+  },
+  "include": [
+    "server/src"
+  ],
+  "exclude": [
+    "src/",
+    "build.ts"
+  ]
+}
