@@ -1,5 +1,4 @@
 import cookieParser from "cookie-parser";
-import morgan from "morgan";
 import helmet from "helmet";
 import express, { Request, Response, NextFunction } from "express";
 
@@ -28,10 +27,6 @@ app.use(
         statusLevels: true,
     })
 );
-// Show routes called in console during development
-if (EnvVars.nodeEnv === NodeEnvs.Dev) {
-    app.use(morgan("dev"));
-}
 
 // Security
 if (EnvVars.nodeEnv === NodeEnvs.Production) {

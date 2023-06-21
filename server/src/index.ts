@@ -19,7 +19,7 @@ app.prepare()
         server.listen(EnvVars.port, () => logger.info(msg));
     })
     .catch((ex) => {
-        console.error(ex.stack);
-        process.exit(1);
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        logger.error(ex.stack);
     });
 // **** Start server **** //
